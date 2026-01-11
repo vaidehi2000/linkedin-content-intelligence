@@ -1,2 +1,4 @@
-# linkedin-content-intelligence
-A Python-based tool to structure and analyze professional learning trends from LinkedIn saves.
+# LinkedIn Content Intelligence
+This project uses Python and Regular Expressions to transform unstructured LinkedIn "Saved Items" into a structured dataset for career trend analysis.
+
+__Tech Stack__: Python, Pandas, Regex.
