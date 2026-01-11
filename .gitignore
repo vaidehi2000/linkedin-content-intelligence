@@ -1,3 +1,9 @@
+# --- Personal Data Privacy ---
+*.txt
+*.csv
+raw_saves.txt
+my_linkedin_learning_data.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
