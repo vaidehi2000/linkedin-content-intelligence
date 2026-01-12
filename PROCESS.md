@@ -25,7 +25,7 @@ My first analysis script just counted every word. The result was "Noise": *the, 
 I realized that "Frequency" does not equal "Importance." 
 - **Why?** Functional words have high frequency but zero professional signal.
 - **The Pivot:** I moved away from "General Counting" and created **"Heuristic Skill Buckets."** I mapped specific keywords (e.g., 'python', 'sql') to broader categories (e.g., 'Technical Skills'). 
-- **The Result:** The data suddenly became "Recruiter-Ready"—showing exactly what industries I was following.
+- **The Result:** The data suddenly became "Recruiter-Ready", showing exactly what industries I was following.
 
 ---
 

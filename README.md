@@ -3,7 +3,7 @@ This project uses Python and Regular Expressions to transform unstructured Linke
 
 __Tech Stack__: Python, Pandas, Regex.
 
-![Skill Analysis Chart](category_chart.png)
+![Skill Analysis Chart](images/category_chart.png)
 
 ## 📊 Strategic Insights
 By cross-referencing skill categories with sentiment analysis, the project revealed the following distribution:
