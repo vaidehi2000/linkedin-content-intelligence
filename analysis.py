@@ -8,10 +8,19 @@ df = pd.read_csv('my_linkedin_learning_data.csv')
 # 2. Combine all headlines into one big string
 all_text = " ".join(df['Headline'].astype(str)).lower()
 
-# 3. Use Regex to find words (Filter out common words like 'the', 'and', 'is')
 words = re.findall(r'\w+', all_text)
-stop_words = {'the', 'and', 'to', 'in', 'is', 'for', 'of', 'on', 'with', 'a', 'we', 'i', 'how', 'at'}
-interesting_words = [w for w in words if w not in stop_words and len(w) > 2]
+
+# 3. Expanded Stop Words to filter out "Noise"
+noise_words = {
+    'the', 'and', 'to', 'in', 'is', 'for', 'of', 'on', 'with', 'a', 'we', 'i', 
+    'how', 'at', 'you', 'this', 'your', 'about', 'are', 'more', 'that', 'here',
+    'can', 'it', 'my', 'if', 'from', 'but', 'all', 'will', 'be', 'an', 'what',
+    'have', 'so', 'just', 'get', 'was', 'by', 'do', 'out', 'up'
+}
+
+# We also want to look for "Bigrams" (two words together like 'Data Science')
+# but for now, let's just clean the single words better:
+interesting_words = [w for w in words if w not in noise_words and len(w) > 3]
 
 # 4. Count the top 10 most frequent keywords
 word_counts = Counter(interesting_words)
